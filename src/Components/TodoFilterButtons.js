@@ -1,6 +1,6 @@
 import React from "react";
 
-function FilterButton(props) {
+function TodoFilterButton(props) {
   return (
     <button type="button" className="btn toggle-btn"
           aria-pressed={props.isPressed} onClick = {() =>
@@ -12,5 +12,5 @@ function FilterButton(props) {
   );
 }
 
-export default FilterButton;
+export default TodoFilterButton;
 

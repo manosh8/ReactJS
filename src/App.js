@@ -1,6 +1,6 @@
 import Todo from './Components/Todo'
 import Form from './Components/Form'
-import FilterButton from './Components/FilterButton'
+import TodoFilterButton from './Components/TodoFilterButtons'
 import React, { useState, useRef, useEffect } from "react"
 import {nanoid} from "nanoid"
 
@@ -33,7 +33,7 @@ const taskLists = tasks
 
 
 const filterList = FILTER_NAMES.map((name) => (
-  <FilterButton
+  <TodoFilterButton
     key={name}
     name={name}
     isPressed={name === filter}
